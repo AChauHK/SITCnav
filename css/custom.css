@@ -1,21 +1,15 @@
-﻿/*
-*
-* ==========================================
-* CUSTOM UTIL CLASSES
-* ==========================================
-*
-*/
+﻿/*========================================== MENU ==========================================*/
 
 .navbar {
     background-color: #6d7071;
     color: #fff;
 }
 #navbarContent .navbar-nav .nav-item .nav-link {
-    color: #fff;
+    color: #d2d2d2;
 }
 #navbarContent .navbar-nav .nav-item .nav-link:hover,
 #navbarContent .navbar-nav .nav-item .nav-link:active {
-    color: #ff6d00;
+    color: #fff;
 }
 .megamenu:hover > .dropdown-menu {
     display: block;
@@ -28,6 +22,22 @@
     border: none;
     width: 100%;
 }
+.dropdown-menu .col-lg-6 h6,
+.dropdown-menu .col-lg-6 p {
+    color: #424242;
+}
+.dropdown-menu a:hover,
+.dropdown-menu a:hover,
+.dropdown-menu a:hover h6,
+.dropdown-menu a:hover p,
+.dropdown-menu a h6:hover,
+.dropdown-menu a p:hover {
+    color: #ff6d00;
+    text-decoration: none;
+}
+.display-mobile {
+    display:none;
+}
 .nav-product-img {
     max-width: 150px;
     width: 100%;
@@ -35,80 +45,68 @@
 p {
     font-size:14px;
 }
-/*
-*
-* ==========================================
-* FOR DEMO PURPOSES
-* ==========================================
-*
-*/
+.form-inline .form-control {
+    border-radius: .25rem 0 0 .25rem;
+}
+.form-inline .btn-primary,
+.form-inline .btn-primary:not(:disabled):not(.disabled).active, 
+.form-inline .btn-primary:not(:disabled):not(.disabled):active, 
+.form-inline .show > .btn-primary.dropdown-toggle {
+    background-color: #ff6d00;
+    border-color: #ff6d00;
+    border-radius: 0 .25rem .25rem 0;
+    height: calc(1.5em + .75rem + 2px);
+}
+.form-inline .btn-primary svg {
+    display:block;
+}
+
+/*========================================== CONTENT ==========================================*/
+
+header img {
+    width:100%;
+}
 body {
-    background: #eaafc8;
-    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);
-    background: linear-gradient(to right, #eaafc8, #654ea3);
     min-height: 100vh;
 }
-
-code {
-    color: #745eb1;
-    background: #fff;
-    padding: 0.1rem 0.2rem;
-    border-radius: 0.2rem;
+section img{
+    width:100%;
+    height:100%;
 }
 
-.text-uppercase {
-    letter-spacing: 0.08em;
-}
-/*
-*
-* ==========================================
-* FOR SUB MENU
-* ==========================================
-*
-*/
-.dropright .dropdown-toggle {
-    background-color: #fff;
-    color: #6d7071;
-    border: none;
-    border-radius: 0;
-}
+/*========================================== RESPONSIVE  ==========================================*/
 
-.dropright .dropdown-toggle:hover,
-.dropright .dropdown-toggle.show {
-    color: #212529;
-    background-color: rgba(84, 91, 98, 0.2);
+.navbar-toggler {
+    border: transparent;
+    height: 2em;
 }
-
-.dropright:hover > .dropdown-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -moz-box;
-    display: -webkit-flex;
-    display: flex;
+.navbar-toggler img{
+    display:block;
 }
-
-.dropdown-menu.show {
-    display: none;
-}
-
-.navbar .dropdown-toggle:not(.nav-link)::after {
-    border-left: .3em solid #6d7071;
-}
-.dropright .dropdown-menu {
-    position: absolute;
-}
-
-.dropright .dropdown-menu {
-    top: 0;
-    left: 350px;
-    height: 100%;
-    border-right: 1px solid #dee2e6 !important;
-}
-
-
-
-.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
-    color: #6d7071;
-    background-color: rgba(84, 91, 98, 0.2);
-    border-color: rgba(84, 91, 98, 0.2);
-}
+@media only screen and (max-width: 1000px) {
+    .product-img {
+        display: none;
+    }
+    .dropdown-menu h1 {
+        font-size: 16px;
+    }
+    .megamenu:hover > .dropdown-menu,
+    .dropdown-menu.show,
+    .dropdown-toggle::after,
+    .nav-link.dropdown-toggle {
+        display: none !important;
+    }
+    .display-mobile,
+    .display-mobile:hover {
+        display:block;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700 !important;
+        text-transform: uppercase !important;
+        display: block !important;
+    }
+    .form-control {
+        width: auto;
+    }
+    
+  }
