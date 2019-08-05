@@ -3,172 +3,161 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/flex.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://images.stockinthechannel.co.uk/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="https://images.stockinthechannel.co.uk/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://images.stockinthechannel.co.uk/favicon-16x16.png">
-    <link rel="manifest" href="https://images.stockinthechannel.co.uk/webmanifest.json">
-    <link rel="mask-icon" href="https://images.stockinthechannel.co.uk/safari-pinned-tab.svg" color="#ff6600">
-    <meta name="msapplication-TileColor" content="#ff893b">
-    <meta name="theme-color" content="#ff893b">
     <title>Stock in the Channel</title>
 </head>
 <body>
     <header>
-        <div class="p-3">
-            <h3>
+        <div class="p-3 container">
+            <h2>
                 Header goes here...
-            </h3>
+            </h2>
         </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light py-0 shadow-sm">
+
+    <nav class="navbar" id="navbar">
         <button type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler">
-            <span>
-                <img src="img/SITC-burger-menu.svg" alt="menu toggle">  
-            </span>
+                <span>
+                    <img src="img/SITC-burger-menu.svg" alt="menu toggle">  
+                </span>
         </button>
-        <div id="navbarContent" class="collapse navbar-collapse">
-            <ul class="ml-2 mr-auto navbar-nav">
-                <li class="nav-item dropdown megamenu py-3">
+        <div id="navbarContent" class="collapse navbar-collapse container flex flex-justify-content-space-between ">
+            <ul class="nav-list flex">
+                <li class="nav-item categories p-3-left">
                     <a href="https://www.stockinthechannel.co.uk/Categories/Index" class="display-mobile">Categories</a>
-                    <a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="px-lg-3 nav-link dropdown-toggle font-weight-bold text-uppercase">Categories</a>
-                    <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
-                        <div class="container-fluid">
-                            <div class="row bg-white rounded-0 m-0 shadow-sm p-3">
-                                <a href="https://www.stockinthechannel.co.uk/Category/Notebooks/151" class="col-lg-3 col-md-6 col-xs-6 my-2 p-1 flex">
-                                    <div class="col-lg-6 flex flex-align-items-center product-img"><img class="nav-product-img" src="img/SITC-nav-1-notebook.jpg"></div>
-                                    <div class="col-lg-6">
+                    <div class="display-desktop">
+                        <h6>Categories</h6>
+                        <div class="nav-dropdown display-desktop categories">
+                            <div class="categories-container flex flex-wrap-wrap p-2">
+                                <a href="https://www.stockinthechannel.co.uk/Category/Notebooks/151" class="dropdown-item p-1 flex">
+                                    <div class="flex flex-align-items-center product-img"><img class="nav-product-img" src="img/SITC-nav-1-notebook.jpg"></div>
+                                    <div class="product-text">
                                         <h6>Notebooks</h6>
                                         <p>Lorem ipsum dolor sit amet, vestibulum eu mauris tortor montes.</p>
                                     </div>
                                 </a>
-                                <a href="https://www.stockinthechannel.co.uk/Category/toner-cartridges/375" class="col-lg-3 col-md-6 col-xs-6 my-2 p-1 flex">
-                                    <div class="col-lg-6 flex flex-align-items-center product-img"><img class="nav-product-img" src="img/SITC-nav-2-toner-cartridges.jpg"></div>
-                                    <div class="col-lg-6">
+                                <a href="https://www.stockinthechannel.co.uk/Category/toner-cartridges/375" class="dropdown-item p-1 flex">
+                                    <div class="flex flex-align-items-center product-img"><img class="nav-product-img" src="img/SITC-nav-2-toner-cartridges.jpg"></div>
+                                    <div class="product-text">
                                         <h6>Toner Cartridges</h6>
                                         <p>Lorem ipsum dolor sit amet, vestibulum eu mauris tortor montes.</p>
                                     </div>
                                 </a>
-                                <a href="https://www.stockinthechannel.co.uk/Category/IT-Support-Services/1546" class="col-lg-3 col-md-6 col-xs-6 my-2 p-1 flex">
-                                    <div class="col-lg-6 flex flex-align-items-center product-img"><img class="nav-product-img" src="img/SITC-nav-3-IT-Service.jpg"></div>
-                                    <div class="col-lg-6">
+                                <a href="https://www.stockinthechannel.co.uk/Category/IT-Support-Services/1546" class="dropdown-item p-1 flex">
+                                    <div class="flex flex-align-items-center product-img"><img class="nav-product-img" src="img/SITC-nav-3-IT-Service.jpg"></div>
+                                    <div class="product-text">
                                         <h6>IT Support Service</h6>
                                         <p>Lorem ipsum dolor sit amet, vestibulum eu mauris tortor montes.</p>
                                     </div>
                                 </a>
-                                <a href="https://www.stockinthechannel.co.uk/Category/ink-cartridges/377" class="col-lg-3 col-md-6 col-xs-6 my-2 p-1 flex">
-                                    <div class="col-lg-6 flex flex-align-items-center product-img"><img class="nav-product-img" src="img/SITC-nav-4-Ink-Cartridges.jpg"></div>
-                                    <div class="col-lg-6">
+                                <a href="https://www.stockinthechannel.co.uk/Category/ink-cartridges/377" class="dropdown-item p-1 flex">
+                                    <div class="flex flex-align-items-center product-img"><img class="nav-product-img" src="img/SITC-nav-4-Ink-Cartridges.jpg"></div>
+                                    <div class="product-text">
                                         <h6>Ink Cartridges</h6>
                                         <p>Lorem ipsum dolor sit amet, vestibulum eu mauris tortor montes.</p>
                                     </div>
                                 </a>
-                                <a href="https://www.stockinthechannel.co.uk/Category/Warranty-Support/839" class="col-lg-3 col-md-6 col-xs-6 my-2 p-1 flex">
-                                    <div class="col-lg-6 flex flex-align-items-center product-img"><img class="nav-product-img" src="img/SITC-nav-5-Warranty.jpg"></div>
-                                    <div class="col-lg-6">
+                                <a href="https://www.stockinthechannel.co.uk/Category/Warranty-Support/839" class="dropdown-item p-1 flex">
+                                    <div class="flex flex-align-items-center product-img"><img class="nav-product-img" src="img/SITC-nav-5-Warranty.jpg"></div>
+                                    <div class="product-text">
                                         <h6>Warranty &amp Support</h6>
                                         <p>Lorem ipsum dolor sit amet, vestibulum eu mauris tortor montes.</p>
                                     </div>
                                 </a>
-                                <a href="https://www.stockinthechannel.co.uk/Category/computer-monitors/222" class="col-lg-3 col-md-6 col-xs-6 my-2 p-1 flex">
-                                    <div class="col-lg-6 flex flex-align-items-center product-img"><img class="nav-product-img" src="img/SITC-nav-6-Monitor.jpg"></div>
-                                    <div class="col-lg-6">
+                                <a href="https://www.stockinthechannel.co.uk/Category/computer-monitors/222" class="dropdown-item p-1 flex">
+                                    <div class="flex flex-align-items-center product-img"><img class="nav-product-img" src="img/SITC-nav-6-Monitor.jpg"></div>
+                                    <div class="product-text">
                                         <h6>Computer Monitors</h6>
                                         <p>Lorem ipsum dolor sit amet, vestibulum eu mauris tortor montes.</p>
                                     </div>
                                 </a>
-                                <a href="https://www.stockinthechannel.co.uk/Category/pcs-workstations/153" class="col-lg-3 col-md-6 col-xs-6 my-2 p-1 flex">
-                                    <div class="col-lg-6 flex flex-align-items-center product-img"><img class="nav-product-img" src="img/SITC-nav-7PCs.jpg"></div>
-                                    <div class="col-lg-6">
+                                <a href="https://www.stockinthechannel.co.uk/Category/pcs-workstations/153" class="dropdown-item p-1 flex">
+                                    <div class="flex flex-align-items-center product-img"><img class="nav-product-img" src="img/SITC-nav-7PCs.jpg"></div>
+                                    <div class="product-text">
                                         <h6>PCs/Workstations</h6>
                                         <p>Lorem ipsum dolor sit amet, vestibulum eu mauris tortor montes.</p>
                                     </div>
                                 </a>
-                                <a href="https://www.stockinthechannel.co.uk/Category/network-switches/258" class="col-lg-3 col-md-6 col-xs-6 my-2 p-1 flex">
-                                    <div class="col-lg-6 flex flex-align-items-center product-img"><img class="nav-product-img" src="img/SITC-nav-8-Network-Switches.jpg"></div>
-                                    <div class="col-lg-6">
+                                <a href="https://www.stockinthechannel.co.uk/Category/network-switches/258" class="dropdown-item p-1 flex">
+                                    <div class="flex flex-align-items-center product-img"><img class="nav-product-img" src="img/SITC-nav-8-Network-Switches.jpg"></div>
+                                    <div class="product-text">
                                         <h6>Network Switches</h6>
                                         <p>Lorem ipsum dolor sit amet, vestibulum eu mauris tortor montes.</p>
                                     </div>
                                 </a>
-                            </div>
+                            </div> 
                         </div>
-                    </div>
+                    </div> 
                 </li>
-                <li class="nav-item dropdown megamenu py-3">
+                <li class="nav-item brands p-3-left">
                     <a href="https://www.stockinthechannel.co.uk/Brands" class="display-mobile">Brands</a>
-                    <a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="px-lg-3 nav-link dropdown-toggle font-weight-bold text-uppercase">Brands</a>
-                    <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
-                        <div class="container-fluid">
-                            <div class="row bg-white rounded-0 m-0 shadow-sm p-3">
-                                <div>
-                                    <h1>Brands goes here...</h1>
-                                </div>
+                    <div class="display-desktop">
+                        <h6>Brands</h6>
+                        <div class="nav-dropdown display-desktop brands">
+                            <div class="p-3">
+                                <h2>Brands contents goes here...</h2>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li class="nav-item dropdown megamenu py-3">
+                <li class="nav-item distributors p-3-left">
                     <a href="https://www.stockinthechannel.co.uk/Distributors/Index" class="display-mobile">Distributors</a>
-                    <a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="px-lg-3 nav-link dropdown-toggle font-weight-bold text-uppercase">Distributors</a>
-                    <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
-                        <div class="container-fluid">
-                            <div class="row bg-white rounded-0 m-0 shadow-sm p-3">
-                                    <div>
-                                            <h1>Distributors goes here...</h1>
-                                    </div>
+                    <div class="display-desktop">
+                        <h6>Distributors</h6>
+                        <div class="nav-dropdown display-desktop distributors">
+                            <div class="p-3">
+                                <h2>Distributors contents goes here...</h2>
                             </div>
                         </div>
                     </div>
                 </li>
-                <li class="nav-item dropdown megamenu py-3">
-                    <a id="megamneu" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="px-lg-3 nav-link dropdown-toggle font-weight-bold text-uppercase">Product Finders</a>
-                    <div aria-labelledby="megamneu" class="dropdown-menu border-0 p-0 m-0">
-                        <div class="container-fluid">
-                            <div class="row bg-white rounded-0 m-0 shadow-sm p-3">
-                                <div>
-                                        <h1>Product Finders goes here...</h1>
-                                </div>
+                <li class="nav-item product p-3-left">
+                    <div class="display-desktop">
+                        <h6>Product Finders</h6>
+                        <div class="nav-dropdown display-desktop product">
+                            <div class="p-3">
+                                <h2>Product Finders contents goes here...</h2>
                             </div>
                         </div>
                     </div>
                 </li>
             </ul>
-            <form class="form-inline my-3 my-lg-0">
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-primary rounded-right my-2 my-sm-0 ml-0" type="submit">
+            <form class="search-section flex">
+                <input class="search-input" placeholder="Search"/>
+                <button class="search-button">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        width="20px" height="px" viewBox="0 0 20.2 20.2" style="enable-background:new 0 0 20.2 20.2;" xml:space="preserve">
+                         width="20px" height="px" viewBox="0 0 20.2 20.2" style="enable-background:new 0 0 20.2 20.2;" xml:space="preserve">
                         <style type="text/css">
-                            .st0{fill:#FFFFFF;}
+                            .st0 {
+                                fill: #FFFFFF;
+                            }
                         </style>
                         <g>
                             <path class="st0" d="M15.8,14.1c1.1-1.5,1.8-3.3,1.8-5.3c0-4.9-3.9-8.8-8.8-8.8S0,3.9,0,8.8s3.9,8.8,8.8,8.8c2,0,3.9-0.7,5.3-1.8
-                                l4.1,4.1c0.2,0.2,0.5,0.4,0.8,0.4c0.3,0,0.6-0.1,0.8-0.4c0.5-0.5,0.5-1.2,0-1.7L15.8,14.1z M8.8,15.3c-3.6,0-6.5-2.9-6.5-6.5
-                                s2.9-6.5,6.5-6.5s6.5,2.9,6.5,6.5S12.3,15.3,8.8,15.3z"/>
+                                        l4.1,4.1c0.2,0.2,0.5,0.4,0.8,0.4c0.3,0,0.6-0.1,0.8-0.4c0.5-0.5,0.5-1.2,0-1.7L15.8,14.1z M8.8,15.3c-3.6,0-6.5-2.9-6.5-6.5
+                                        s2.9-6.5,6.5-6.5s6.5,2.9,6.5,6.5S12.3,15.3,8.8,15.3z" />
+
                         </g>
                    </svg>
-                   
                 </button>
             </form>
         </div>
     </nav>
-
-
-    <section>
-        <div class="p-3">
-            <h1>
+    <section class="main-content">
+        <div class="p-3 container">
+            <h2>
                 Content goes here...
-            </h1>
+            </h2>
         </div>
     </section>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <footer>
+        <div class="p-3 container">
+            <h2>
+                Footer goes here...
+            </h2>
+        </div>
+    </footer>
 </body>
 </html>
