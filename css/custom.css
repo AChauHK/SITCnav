@@ -32,9 +32,6 @@ p {
 .p-3 {
     padding: 30px;
 }
-.p-3-left {
-    padding: 30px 30px 30px 0;
-}
 .py-3 {
     padding-left: 30px;
     padding-right: 30px;
@@ -70,6 +67,9 @@ header {
     color: #ff6d00;
     text-decoration: none;
 }
+.nav-item:first-of-type {
+    padding-left:0;
+}
 .nav-item a,
 .nav-item a h6,
 .nav-item a p {
@@ -78,6 +78,21 @@ header {
 }
 .nav-item a.display-mobile {
     color: #fff;
+}
+.nav-item h6 {
+    position:relative;
+}
+.nav-item h6:after {
+    top: 11px;
+    display: inline-block;
+    position: absolute;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
 }
 /*========================================== NAV DROPDOWN ==========================================*/
 .nav-item:hover .nav-dropdown {
