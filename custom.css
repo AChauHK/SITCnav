@@ -1,0 +1,228 @@
+﻿/*========================================== GENERAL ==========================================*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+h1 {
+    font-size:2rem;
+}
+h6 {
+    font-size: 1rem;
+    margin: 0;
+}
+p {
+    font-size: .85rem;
+}
+.display-mobile {
+    display: none;
+}
+.navbar-toggler {
+    display:none;
+}
+.p-1 {
+    padding: 10px;
+}
+.p-2 {
+    padding: 20px;
+}
+.p-3 {
+    padding: 30px;
+}
+.py-3 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/*========================================== HEADER ==========================================*/
+header {
+    width: 100%;
+}
+/*========================================== NAV ==========================================*/
+.nav-list {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: #6d7071;
+    color: #fff;
+}
+.navbar .container {
+    position: relative;
+}
+.nav-dropdown {
+    display: none;
+}
+.nav-item {
+    display: block;
+    cursor: pointer;
+}
+.nav-item a:hover,
+.nav-item a:hover h6,
+.nav-item a:hover p,
+.nav-item a h6:hover,
+.nav-item a p:hover {
+    color: #ff6d00;
+    text-decoration: none;
+}
+.nav-item:first-of-type {
+    padding-left:0;
+}
+.nav-item a,
+.nav-item a h6,
+.nav-item a p {
+    text-decoration: none;
+    color: #424242;
+}
+.nav-item a.display-mobile {
+    color: #fff;
+}
+.nav-item h6 {
+    position:relative;
+}
+.nav-item h6:after {
+    top: 11px;
+    display: inline-block;
+    position: absolute;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+/*========================================== NAV DROPDOWN ==========================================*/
+.nav-item:hover .nav-dropdown {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    color: #424242;
+    -webkit-box-shadow: 0 3px 7px -3px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 3px 7px -3px rgba(0,0,0,.1);
+    box-shadow: 0 3px 7px -3px rgba(0,0,0,.1);
+}
+.dropdown-item {
+    padding: .25rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 24%;
+}
+.product-img {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.nav-product-img {
+    max-width: 150px;
+    width: 100%;
+}
+.product-text {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+/*========================================== SEARCH ==========================================*/
+.search-input,
+.search-button {
+    height: 44px;
+    margin: auto 0;
+}
+.search-input {
+    display: inline-block;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 5px 0 0 5px;
+}
+.search-button {
+    display: inline-block;
+    background-color: #ff6d00;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    width: 50px;
+    height: 44px;
+    border: 1px solid #ff6d00;
+}
+/*========================================== CONTENT ==========================================*/
+section.main-content {
+    background-color: #f5f5f5;
+    height: 60vh;
+}
+/*========================================== RESPONSIVE ==========================================*/
+@media only screen and (max-width: 1500px) {
+    .dropdown-item {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 32%;
+    }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .dropdown-item {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 49%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .container {
+        padding:1rem;
+    }
+    h2 {
+        margin:0;
+    }
+    .display-mobile {
+        display: block;
+    }
+    .navbar-toggler {
+        display: block;
+        background: none;
+        border: none;
+        padding: 1rem;
+    }
+    #navbarContent {
+        display:none;
+    }
+    #navbarContent.show {
+        display:block;
+    }
+    .navbar-collapse.show ul {
+        -ms-flex-direction: column;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    .nav-item {
+        padding:.5rem;
+    }
+    body .display-desktop,
+    .nav-item:hover .display-desktop {
+        display: none;
+    }
+
+    .search-section {
+        padding-bottom: 1rem;
+    }
+}
+/*========================================== IE 10 / IE 11 ==========================================*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .nav-item:hover .nav-dropdown {
+        width: 93%;
+        margin: 0 auto;
+    }
+}
